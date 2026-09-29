@@ -11,6 +11,7 @@ import LearnIcon from '../assets/LoginAssets/LearnIcon.png'
 import TrustedIcon from '../assets/LoginAssets/TrustedIcon.png'
 import InfoIcon from '../assets/LoginAssets/InfoIcon.png'
 import SignInArrow from '../assets/LoginAssets/SignInArrow.png'
+import DotIcon from '../assets/LoginAssets/DotIcon.png'
 import './CommonLoginScreen.css'
 
 const CommonLoginScreen = () => {
@@ -319,9 +320,17 @@ const CommonLoginScreen = () => {
 
                     <div className="Common-Login-Footer-Links">
                         <a href="#help">Help</a>
-                        <span>•</span>
+                        <img
+                            className="Common-Login-Footer-Dot"
+                            src={DotIcon}
+                            alt=""
+                        />
                         <a href="#privacy">Privacy</a>
-                        <span>•</span>
+                        <img
+                            className="Common-Login-Footer-Dot"
+                            src={DotIcon}
+                            alt=""
+                        />
                         <a href="#terms">Terms</a>
                     </div>
                 </div>
