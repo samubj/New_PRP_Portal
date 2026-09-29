@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html,
 body,
 #root {
@@ -13,21 +12,17 @@ body,
     margin: 0;
     padding: 0;
 }
-
 html {
     overflow-x: hidden;
 }
-
 body {
     min-height: 100vh;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 #root {
     min-height: 100vh;
 }
-
 .Common-Login-Container {
     width: 100%;
     min-height: 100vh;
@@ -35,191 +30,158 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 45% 55%;
-    background: linear-gradient(
-        90deg,
-        #58709d 0%,
-        #647ba3 25%,
-        #7d94b5 35%,
-        #a9b9cf 42%,
-        #cbd5e2 46%,
-        #e7ebf1 49%,
-        #ffffff 55%,
-        #ffffff 100%
-    );
+    background: linear-gradient(90deg, #58709d 0%, #647ba3 25%, #7d94b5 35%, #a9b9cf 42%, #cbd5e2 46%, #e7ebf1 49%, #ffffff 55%, #ffffff 100%);
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .Common-Login-Left {
     min-height: 100vh;
     box-sizing: border-box;
-    padding: 48px 7% 45px;
+    padding: 42px 7% 40px;
     display: flex;
     flex-direction: column;
     color: #ffffff;
     background: transparent;
     overflow: hidden;
 }
-
 .Common-Login-Brand {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
 }
-
 .Common-Login-Brand-Logo {
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .Common-Login-Brand-Logo img {
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
     display: block;
     object-fit: contain;
 }
-
 .Common-Login-Brand-Content {
     display: flex;
     flex-direction: column;
 }
-
 .Common-Login-Brand-Content h3 {
-    margin: 0 0 4px;
-    font-size: 19px;
+    margin: 0 0 3px;
+    font-size: 16px;
     line-height: 1.2;
     font-weight: 700;
 }
-
 .Common-Login-Brand-Content p {
     margin: 0;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.2;
     font-weight: 500;
 }
-
 .Common-Login-Welcome-Content {
-    margin-top: 38px;
+    margin-top: 42px;
 }
-
 .Common-Login-Welcome-Content h5 {
-    margin: 0 0 18px;
-    font-size: 20px;
+    margin: 0 0 15px;
+    font-size: 16px;
     line-height: 1;
     font-weight: 700;
 }
-
 .Common-Login-Welcome-Content h1 {
     margin: 0;
-    font-size: 38px;
-    line-height: 0.98;
+    font-size: 32px;
+    line-height: 1.05;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
 }
-
 .Common-Login-Welcome-Content p {
-    margin: 13px 0 0;
-    font-size: 15px;
-    line-height: 1.35;
+    margin: 14px 0 0;
+    font-size: 13px;
+    line-height: 1.4;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.96);
 }
-
 .Common-Login-Features {
     width: 100%;
     max-width: 610px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 32px;
-    margin-top: 27px;
+    column-gap: 28px;
+    margin-top: 28px;
 }
-
 .Common-Login-Feature {
     min-width: 0;
 }
-
 .Common-Login-Feature-Icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 10px;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 9px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .Common-Login-Feature-Icon img {
-    width: 48px;
-    height: 48px;
+    width: 42px;
+    height: 42px;
     display: block;
     object-fit: contain;
 }
-
 .Common-Login-Feature h3 {
-    margin: 0 0 6px;
+    margin: 0 0 5px;
     white-space: nowrap;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.15;
     font-weight: 700;
 }
-
 .Common-Login-Feature p {
     margin: 0;
-    font-size: 14px;
-    line-height: 1.35;
+    font-size: 12px;
+    line-height: 1.4;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.92);
 }
-
 .Common-Login-Illustration-Container {
     flex: 1;
     min-height: 300px;
     max-width: 650px;
-    margin-top: 18px;
+    margin-top: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .Common-Login-Illustration-Container img {
-    width: 88%;
-    max-width: 600px;
-    max-height: 420px;
+    width: 84%;
+    max-width: 560px;
+    max-height: 390px;
     display: block;
     object-fit: contain;
 }
-
 .Common-Login-Info {
     width: 100%;
     max-width: 640px;
-    min-height: 54px;
+    min-height: 50px;
     box-sizing: border-box;
-    padding: 0 28px;
+    padding: 0 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 13px;
+    gap: 11px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.28);
 }
-
 .Common-Login-Info img {
-    width: 23px;
-    height: 23px;
+    width: 21px;
+    height: 21px;
     flex-shrink: 0;
     object-fit: contain;
 }
-
 .Common-Login-Info p {
     margin: 0;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.3;
     font-weight: 700;
     color: #172e55;
 }
-
 .Common-Login-Right {
     min-height: 100vh;
     box-sizing: border-box;
@@ -229,42 +191,36 @@ body {
     justify-content: flex-start;
     background: transparent;
 }
-
 .Common-Login-Form-Container {
     width: 100%;
     max-width: 515px;
     transform: translateY(-5px);
 }
-
 .Common-Login-Form-Header {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
 }
-
 .Common-Login-Form-Header h1 {
-    margin: 0 0 10px;
+    margin: 0 0 7px;
     font-size: 30px;
     line-height: 1.15;
     font-weight: 700;
     color: #173766;
 }
-
 .Common-Login-Form-Header p {
     margin: 0;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.3;
+    font-weight: 400;
     color: #8091ae;
 }
-
 .Common-Login-Form {
     display: flex;
     flex-direction: column;
 }
-
 .Common-Login-Field {
     width: 100%;
     margin-bottom: 24px;
 }
-
 .Common-Login-Field label {
     display: block;
     margin: 0 0 10px;
@@ -273,17 +229,14 @@ body {
     font-weight: 500;
     color: #333333;
 }
-
 .Common-Login-Password-Label {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .Common-Login-Password-Label label {
     margin-bottom: 10px;
 }
-
 .Common-Login-Forgot-Password {
     margin-bottom: 10px;
     padding: 0;
@@ -294,7 +247,6 @@ body {
     color: #14749e;
     cursor: pointer;
 }
-
 .Common-Login-Input-Container {
     width: 100%;
     height: 48px;
@@ -307,11 +259,9 @@ body {
     overflow: hidden;
     transition: border-color 0.2s ease;
 }
-
 .Common-Login-Input-Container:focus-within {
     border-color: #173766;
 }
-
 .Common-Login-Input-Container > img {
     width: 19px;
     height: 19px;
@@ -320,7 +270,6 @@ body {
     object-fit: contain;
     opacity: 0.55;
 }
-
 .Common-Login-Input-Container input {
     flex: 1;
     width: 100%;
@@ -334,22 +283,18 @@ body {
     font-size: 13px;
     color: #333333;
 }
-
 .Common-Login-Input-Container input::placeholder {
     color: #b8b8b8;
 }
-
 .Common-Login-Input-Container input::-ms-reveal,
 .Common-Login-Input-Container input::-ms-clear {
     display: none;
 }
-
 .Common-Login-Input-Container input::-webkit-credentials-auto-fill-button {
     display: none !important;
     visibility: hidden;
     pointer-events: none;
 }
-
 .Common-Login-Password-Toggle {
     width: 48px;
     height: 100%;
@@ -363,7 +308,6 @@ body {
     background: transparent;
     cursor: pointer;
 }
-
 .Common-Login-Password-Toggle img {
     width: 20px;
     height: 20px;
@@ -371,7 +315,6 @@ body {
     object-fit: contain;
     opacity: 0.75;
 }
-
 .Common-Login-Remember {
     width: fit-content;
     margin: -1px 0 25px;
@@ -383,7 +326,6 @@ body {
     color: #4b4b4b;
     cursor: pointer;
 }
-
 .Common-Login-Remember input {
     width: 15px;
     height: 15px;
@@ -391,11 +333,9 @@ body {
     accent-color: #173766;
     cursor: pointer;
 }
-
 .Common-Login-Remember span {
     margin: 0;
 }
-
 .Common-Login-SignIn-Button {
     width: 100%;
     height: 48px;
@@ -403,7 +343,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 5px;
     border: 0;
     border-radius: 6px;
     background: #173766;
@@ -414,17 +354,14 @@ body {
     cursor: pointer;
     transition: background 0.2s ease;
 }
-
 .Common-Login-SignIn-Button:hover {
     background: #102d57;
 }
-
 .Common-Login-SignIn-Arrow {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     object-fit: contain;
 }
-
 .Common-Login-Divider {
     width: 100%;
     margin: 31px 0;
@@ -432,13 +369,11 @@ body {
     align-items: center;
     gap: 18px;
 }
-
 .Common-Login-Divider span {
     flex: 1;
     height: 1px;
     background: #555d69;
 }
-
 .Common-Login-Divider p {
     margin: 0;
     white-space: nowrap;
@@ -446,7 +381,6 @@ body {
     line-height: 1;
     color: #5f6470;
 }
-
 .Common-Login-Google-Button {
     width: 164px;
     height: 40px;
@@ -465,13 +399,11 @@ body {
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
 }
-
 .Common-Login-Google-Button img {
     width: 17px;
     height: 17px;
     object-fit: contain;
 }
-
 .Common-Login-Create-Account {
     margin: 28px 0 0;
     text-align: center;
@@ -479,7 +411,6 @@ body {
     line-height: 1.3;
     color: #404040;
 }
-
 .Common-Login-Create-Account button {
     margin-left: 4px;
     padding: 0;
@@ -492,7 +423,6 @@ body {
     color: #08769e;
     cursor: pointer;
 }
-
 .Common-Login-Footer-Links {
     margin-top: 35px;
     display: flex;
@@ -500,14 +430,12 @@ body {
     justify-content: center;
     gap: 14px;
 }
-
 .Common-Login-Footer-Links a {
     font-size: 10px;
     line-height: 1;
     text-decoration: none;
     color: #4e5665;
 }
-
 .Common-Login-Footer-Dot {
     width: 4px;
     height: 4px;
@@ -515,219 +443,172 @@ body {
     object-fit: contain;
     flex-shrink: 0;
 }
-
 .Common-Login-Footer-Links a:hover {
     color: #173766;
 }
-
 .Common-Login-Desktop-Break {
     display: block;
 }
-
 .Common-Login-Input-Error {
     border-color: #d93025;
 }
-
 .Common-Login-Input-Error:focus-within {
     border-color: #d93025;
 }
-
 .Common-Login-Validation-Error {
     margin: 7px 0 0;
     font-size: 11px;
     line-height: 1.3;
     color: #d93025;
 }
-
 @media (max-width: 1300px) {
     .Common-Login-Container {
         grid-template-columns: 45% 55%;
     }
-
     .Common-Login-Left {
         padding-left: 6%;
         padding-right: 5%;
     }
-
     .Common-Login-Features {
         column-gap: 20px;
     }
-
     .Common-Login-Feature h3 {
-        font-size: 18px;
+        font-size: 15px;
         white-space: normal;
     }
-
     .Common-Login-Right {
         padding-left: 19%;
         padding-right: 5%;
     }
-
     .Common-Login-Form-Container {
         max-width: 500px;
     }
 }
-
 @media (max-width: 1000px) {
     .Common-Login-Container {
         grid-template-columns: 44% 56%;
     }
-
     .Common-Login-Left {
         padding-left: 5%;
         padding-right: 4%;
     }
-
     .Common-Login-Right {
         padding-left: 12%;
         padding-right: 5%;
     }
-
     .Common-Login-Welcome-Content h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
-
     .Common-Login-Feature h3 {
-        font-size: 16px;
+        font-size: 14px;
     }
-
     .Common-Login-Feature p {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
-
 @media (max-width: 800px) {
     .Common-Login-Container {
         display: block;
         background: #ffffff;
     }
-
     .Common-Login-Left {
         min-height: auto;
         padding: 40px 7%;
-        background: linear-gradient(
-            160deg,
-            #58709d 0%,
-            #8395b9 70%,
-            #c1cadb 100%
-        );
+        background: linear-gradient(160deg, #58709d 0%, #8395b9 70%, #c1cadb 100%);
     }
-
     .Common-Login-Features {
         margin-top: 35px;
     }
-
     .Common-Login-Illustration-Container {
         min-height: auto;
         margin: 35px 0;
     }
-
     .Common-Login-Illustration-Container img {
         width: 80%;
     }
-
     .Common-Login-Right {
         min-height: auto;
         padding: 70px 7%;
         background: #ffffff;
     }
-
     .Common-Login-Form-Container {
         max-width: 600px;
         transform: none;
     }
 }
-
 @media (max-width: 600px) {
     .Common-Login-Left {
         padding: 30px 20px;
     }
-
     .Common-Login-Brand-Logo {
         width: 42px;
         height: 42px;
     }
-
     .Common-Login-Brand-Logo img {
         width: 42px;
         height: 42px;
     }
-
     .Common-Login-Brand-Content h3 {
         font-size: 15px;
     }
-
     .Common-Login-Brand-Content p {
         font-size: 10px;
     }
-
     .Common-Login-Welcome-Content {
         margin-top: 35px;
     }
-
     .Common-Login-Welcome-Content h5 {
         font-size: 16px;
     }
-
     .Common-Login-Welcome-Content h1 {
         font-size: 28px;
     }
-
     .Common-Login-Desktop-Break {
         display: none;
     }
-
     .Common-Login-Features {
         grid-template-columns: 1fr;
         row-gap: 24px;
     }
-
     .Common-Login-Feature {
         display: grid;
         grid-template-columns: 52px 1fr;
         column-gap: 13px;
         align-items: center;
     }
-
     .Common-Login-Feature-Icon {
         grid-row: 1 / 3;
         margin: 0;
     }
-
     .Common-Login-Feature-Icon img {
         width: 52px;
         height: 52px;
     }
-
     .Common-Login-Feature h3 {
         margin: 0 0 3px;
         font-size: 17px;
     }
-
     .Common-Login-Feature p {
         font-size: 12px;
     }
-
     .Common-Login-Illustration-Container img {
         width: 100%;
     }
-
     .Common-Login-Info {
         padding: 12px 15px;
     }
-
     .Common-Login-Info p {
         font-size: 10px;
     }
-
     .Common-Login-Right {
         padding: 55px 20px;
     }
-
     .Common-Login-Form-Header h1 {
         font-size: 27px;
     }
-
+    .Common-Login-Form-Header p {
+        font-size: 12px;
+    }
     .Common-Login-Divider {
         gap: 10px;
     }
