@@ -1,4 +1,4 @@
-import  { useState } from 'react'
+import React, { useState } from 'react'
 import ProductLogo from '../assets/LoginAssets/Eduhire.png'
 import LoginIllustration from '../assets/LoginAssets/LoginIllustration.png'
 import EmailIcon from '../assets/LoginAssets/EmailIcon.png'
@@ -26,80 +26,28 @@ const CommonLoginScreen = () => {
         password: ''
     })
 
-    const validateEmail = (value) => {
-        const emailPattern = /^[^\s@]+@[^\s@]+\.(com|in|edu|org)$/i
-        if (!value.trim()) {
-            return 'Email address is required.'
-        }
-        if (!emailPattern.test(value.trim())) {
-            return 'Enter a valid email address with .com, .in, .edu or .org.'
-        }
-        return ''
-    }
-
-    const validatePassword = (value) => {
-        if (!value) {
-            return 'Password is required.'
-        }
-        if (value.length < 8) {
-            return 'Password must contain at least 8 characters.'
-        }
-        if (!/[A-Z]/.test(value)) {
-            return 'Password must contain at least one capital letter.'
-        }
-        if (!/[0-9]/.test(value)) {
-            return 'Password must contain at least one number.'
-        }
-        if (!/[!@#$%^&*(),.?":{}|<>_\-\\[\]';/+=~`]/.test(value)) {
-            return 'Password must contain at least one special character.'
-        }
-        return ''
-    }
-
     const handleChange = (event) => {
         const { name, value, type, checked } = event.target
-        const fieldValue = type === 'checkbox' ? checked : value
         setFormData((prev) => ({
             ...prev,
-            [name]: fieldValue
+            [name]: type === 'checkbox' ? checked : value
         }))
-        if (name === 'email' && errors.email) {
+        if (name === 'email' || name === 'password') {
             setErrors((prev) => ({
                 ...prev,
-                email: validateEmail(value)
+                [name]: ''
             }))
         }
-        if (name === 'password' && errors.password) {
-            setErrors((prev) => ({
-                ...prev,
-                password: validatePassword(value)
-            }))
-        }
-    }
-
-    const handleEmailBlur = () => {
-        setErrors((prev) => ({
-            ...prev,
-            email: validateEmail(formData.email)
-        }))
-    }
-
-    const handlePasswordBlur = () => {
-        setErrors((prev) => ({
-            ...prev,
-            password: validatePassword(formData.password)
-        }))
     }
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        const emailError = validateEmail(formData.email)
-        const passwordError = validatePassword(formData.password)
-        setErrors({
-            email: emailError,
-            password: passwordError
-        })
-        if (emailError || passwordError) {
+        const newErrors = {
+            email: formData.email.trim() ? '' : 'Email is required',
+            password: formData.password ? '' : 'Password is required'
+        }
+        setErrors(newErrors)
+        if (newErrors.email || newErrors.password) {
             return
         }
         console.log(formData)
@@ -121,7 +69,7 @@ const CommonLoginScreen = () => {
                     </div>
                     <div className="Common-Login-Brand-Content">
                         <h3>Placement & Recruitment Platform</h3>
-                        <p>Connect • Discover • Succeed</p>
+                        <p>Connect <span className="Common-Login-Dot"></span> Discover <span className="Common-Login-Dot"></span> Succeed</p>
                     </div>
                 </div>
                 <div className="Common-Login-Welcome-Content">
@@ -171,7 +119,7 @@ const CommonLoginScreen = () => {
                             <label htmlFor="email">Email Address</label>
                             <div className={`Common-Login-Input-Container ${errors.email ? 'Common-Login-Input-Error' : ''}`}>
                                 <img src={EmailIcon} alt="Email" />
-                                <input id="email" name="email" type="email" placeholder="Enter Email address" value={formData.email} onChange={handleChange} onBlur={handleEmailBlur} />
+                                <input id="email" name="email" type="email" placeholder="Enter Email address" value={formData.email} onChange={handleChange} />
                             </div>
                             {errors.email && <p className="Common-Login-Validation-Error">{errors.email}</p>}
                         </div>
@@ -182,7 +130,7 @@ const CommonLoginScreen = () => {
                             </div>
                             <div className={`Common-Login-Input-Container ${errors.password ? 'Common-Login-Input-Error' : ''}`}>
                                 <img src={PasswordIcon} alt="Password" />
-                                <input id="password" name="password" type={formData.showPassword ? 'text' : 'password'} placeholder="Enter your password" value={formData.password} onChange={handleChange} onBlur={handlePasswordBlur} />
+                                <input id="password" name="password" type={formData.showPassword ? 'text' : 'password'} placeholder="Enter your password" value={formData.password} onChange={handleChange} />
                                 <button type="button" className="Common-Login-Password-Toggle" onClick={togglePassword}>
                                     <img src={formData.showPassword ? HidePasswordIcon : ShowPasswordIcon} alt={formData.showPassword ? 'Hide password' : 'Show password'} />
                                 </button>
