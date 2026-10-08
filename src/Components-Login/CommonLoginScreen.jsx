@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import ProductLogo from '../assets/LoginAssets/Eduhire.png'
 import LoginIllustration from '../assets/LoginAssets/LoginIllustration.png'
 import EmailIcon from '../assets/LoginAssets/EmailIcon.png'
@@ -15,6 +16,7 @@ import DotIcon from '../assets/LoginAssets/DotIcon.png'
 import './CommonLoginScreen.css'
 
 const CommonLoginScreen = () => {
+    const navigate = useNavigate()
     const [formData, setFormData] = useState({
         email: '',
         password: '',
@@ -126,7 +128,7 @@ const CommonLoginScreen = () => {
                         <div className="Common-Login-Field">
                             <div className="Common-Login-Password-Label">
                                 <label htmlFor="password">Password</label>
-                                <button type="button" className="Common-Login-Forgot-Password">Forgot Password?</button>
+                                <button type="button" className="Common-Login-Forgot-Password" onClick={() => navigate('/PRP_Portal/ForgotPassword')}>Forgot Password?</button>
                             </div>
                             <div className={`Common-Login-Input-Container ${errors.password ? 'Common-Login-Input-Error' : ''}`}>
                                 <img src={PasswordIcon} alt="Password" />

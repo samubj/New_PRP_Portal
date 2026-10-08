@@ -64,6 +64,19 @@
     line-height: 1.2;
     font-weight: 500
 }
+.Common-Login-Dot {
+     width: 4px;
+     height: 4px;
+     gap: 4px;
+     margin: 2px 0 0;
+     margin: 0;
+     display: inline-block;
+     vertical-align: middle;
+     position: relative;
+     top: -1px;
+     border-radius: 50%;
+     background: #ffffff
+}
 
 .Common-Login-Welcome-Content {
     margin-top: 38px
@@ -75,6 +88,8 @@
     line-height: 1;
     font-weight: 700
 }
+
+
 
 .Common-Login-Welcome-Content h1 {
     margin: 0;
@@ -117,8 +132,8 @@
 }
 
 .Common-Login-Feature-Icon img {
-    width: 28px;
-    height: 28px;
+    width: 18px;
+    height: 18px;
     display: block;
     object-fit: contain
 }
