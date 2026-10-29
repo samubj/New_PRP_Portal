@@ -46,7 +46,7 @@ const WelcomeRegistrationScreen = () => {
                             <div className="prp-WelcomeRegistration-Author-Icon">
                                 <img src={TestimonialProfileIcon} alt="Testimonial author profile" />
                             </div>
-                            <p>Dr. Elena Vance — Dean of Experiential Education, Global University Network</p>
+                            <p>Dr. Elena Vance - Dean of Experiential Education, Global University Network</p>
                         </div>
                     </div>
                 </div>

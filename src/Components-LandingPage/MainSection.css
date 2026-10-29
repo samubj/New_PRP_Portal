@@ -1,0 +1,544 @@
+.prp-LandingPage-main {
+    width: 100%;
+    color: #132A56;
+    overflow: hidden;
+    background: linear-gradient(270deg, #FFFFFF 39.9%, #566B94 93.27%)
+}
+
+.prp-LandingPage-hero {
+    min-height: 368px;
+    padding: 45px 8.3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+    background: transparent
+}
+
+.prp-LandingPage-heroContent {
+    max-width: 510px
+}
+
+.prp-LandingPage-eyebrow {
+    margin: 0 0 28px;
+    color: #333334;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5
+}
+
+.prp-LandingPage-heroContent h1 {
+    margin: 0 0 24px;
+    color: #132A56;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.45;
+    letter-spacing: -.5px
+}
+
+.prp-LandingPage-heroDescription {
+    max-width: 480px;
+    margin: 0;
+    color: #333334;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7
+}
+
+.prp-LandingPage-heroActions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px
+}
+
+.prp-LandingPage-primaryButton,
+.prp-LandingPage-secondaryButton {
+    min-height: 44px;
+    padding: 0 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 5px rgba(12, 32, 66, .18);
+    transition: transform .2s, box-shadow .2s
+}
+
+.prp-LandingPage-primaryButton {
+    background: #132A56;
+    color: #FFFFFF
+}
+
+.prp-LandingPage-secondaryButton {
+    background: #FFFFFF;
+    color: #132A56
+}
+
+.prp-LandingPage-primaryButton:hover,
+.prp-LandingPage-secondaryButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(12, 32, 66, .2)
+}
+
+.prp-LandingPage-primaryButton:hover {
+    color: #FFFFFF
+}
+
+.prp-LandingPage-secondaryButton:hover {
+    color: #132A56
+}
+
+.prp-LandingPage-heroImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.prp-LandingPage-heroImage img {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: 300px;
+    object-fit: contain
+}
+
+.prp-LandingPage-features {
+    padding: 30px 4.7% 25px;
+    background: #132A5633
+}
+
+.prp-LandingPage-sectionHeading {
+    text-align: center
+}
+
+.prp-LandingPage-sectionHeading .prp-LandingPage-eyebrow {
+    margin: 0 0 22px;
+    font-size: 14px;
+    color: #333334
+}
+
+.prp-LandingPage-sectionHeading h2 {
+    margin: 0;
+    color: #132A56;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.5
+}
+
+.prp-LandingPage-featureGrid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 28px
+}
+
+.prp-LandingPage-featureCard {
+    min-width: 0;
+    min-height: 182px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #8CAAC7;
+    border-radius: 12px
+}
+
+.prp-LandingPage-featureIcon {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #CEDCFF;
+    border-radius: 50%;
+    flex-shrink: 0
+}
+
+.prp-LandingPage-featureIcon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain
+}
+
+.prp-LandingPage-featureCard h3 {
+    min-height: 30px;
+    margin: 0 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #132A56;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4
+}
+
+.prp-LandingPage-featureCard>p {
+    max-width: 180px;
+    margin: 0;
+    color: #333334;
+    font-size: 12px;
+    line-height: 1.5
+}
+
+.prp-LandingPage-testimonials {
+    padding: 48px 4.7% 50px;
+    background: transparent
+}
+
+.prp-LandingPage-testimonials .prp-LandingPage-sectionHeading .prp-LandingPage-eyebrow {
+    margin-bottom: 18px
+}
+
+.prp-LandingPage-testimonialGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 28px
+}
+
+.prp-LandingPage-testimonialCard {
+    position: relative;
+    min-width: 0;
+    min-height: 177px;
+    padding: 24px 24px 20px;
+    background: #132A56;
+    border: 1px solid #7890B4;
+    border-radius: 27px;
+    overflow: hidden
+}
+
+.prp-LandingPage-testimonialHeader {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 14px
+}
+
+.prp-LandingPage-profileIcon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FFFFFF;
+    border-radius: 17px
+}
+
+.prp-LandingPage-profileIcon img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain
+}
+
+.prp-LandingPage-testimonialInfo {
+    min-width: 0
+}
+
+.prp-LandingPage-stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 3px
+}
+
+.prp-LandingPage-stars img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain
+}
+
+.prp-LandingPage-testimonialInfo h3 {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600
+}
+
+.prp-LandingPage-testimonialInfo>p {
+    margin: 3px 0 0;
+    color: #4D5A81;
+    font-size: 9px;
+    line-height: 1.4
+}
+
+.prp-LandingPage-testimonialMessage {
+    position: relative;
+    z-index: 1;
+    margin: 17px 0 0;
+    color: #4D5A81;
+    font-size: 11px;
+    font-style: italic;
+    line-height: 1.5
+}
+
+.prp-LandingPage-quoteIcon {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    width: 60px;
+    height: 45px;
+    object-fit: contain;
+    opacity: .15
+}
+
+.prp-LandingPage-companies {
+    padding: 30px 5% 32px;
+    background: #132A5699;
+    border-top: 2px solid #8796B2
+}
+
+.prp-LandingPage-companies .prp-LandingPage-sectionHeading .prp-LandingPage-eyebrow {
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+    color: #333334
+}
+
+.prp-LandingPage-companies .prp-LandingPage-sectionHeading h2 {
+    font-size: 21px;
+    letter-spacing: 2px;
+    color: #132A56
+}
+
+.prp-LandingPage-companyGrid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    margin-top: 28px
+}
+
+.prp-LandingPage-companyLogo {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.prp-LandingPage-companyLogo img {
+    display: block;
+    max-width: 110px;
+    width: 100%;
+    max-height: 32px;
+    object-fit: contain
+}
+
+@media(min-width:1500px) {
+    .prp-LandingPage-hero {
+        padding-left: 8.3%;
+        padding-right: 8.3%;
+        min-height: 368px
+    }
+
+    .prp-LandingPage-featureGrid {
+        gap: 30px
+    }
+
+    .prp-LandingPage-featureCard {
+        min-height: 182px
+    }
+}
+
+@media(max-width:1100px) {
+    .prp-LandingPage-hero {
+        padding: 40px 5%;
+        gap: 20px
+    }
+
+    .prp-LandingPage-heroContent h1 {
+        font-size: 30px
+    }
+
+    .prp-LandingPage-heroImage img {
+        height: 280px
+    }
+
+    .prp-LandingPage-featureGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px
+    }
+
+    .prp-LandingPage-featureCard {
+        min-height: 200px
+    }
+
+    .prp-LandingPage-testimonialGrid {
+        gap: 16px
+    }
+
+    .prp-LandingPage-testimonialCard {
+        padding: 22px 18px;
+        border-radius: 23px
+    }
+
+    .prp-LandingPage-profileIcon {
+        width: 46px;
+        height: 46px;
+        border-radius: 15px
+    }
+
+    .prp-LandingPage-profileIcon img {
+        width: 32px;
+        height: 32px
+    }
+
+    .prp-LandingPage-testimonialHeader {
+        gap: 10px
+    }
+
+    .prp-LandingPage-companyGrid {
+        gap: 15px
+    }
+}
+
+@media(max-width:650px) {
+    .prp-LandingPage-hero {
+        min-height: auto;
+        padding: 42px 7% 32px;
+        grid-template-columns: 1fr;
+        gap: 18px
+    }
+
+    .prp-LandingPage-heroContent {
+        max-width: none
+    }
+
+    .prp-LandingPage-eyebrow {
+        margin-bottom: 18px;
+        font-size: 13px
+    }
+
+    .prp-LandingPage-heroContent h1 {
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 1.35
+    }
+
+    .prp-LandingPage-heroDescription {
+        font-size: 14px
+    }
+
+    .prp-LandingPage-heroActions {
+        gap: 12px;
+        margin-top: 23px
+    }
+
+    .prp-LandingPage-primaryButton,
+    .prp-LandingPage-secondaryButton {
+        min-height: 44px;
+        padding: 0 18px;
+        font-size: 13px
+    }
+
+    .prp-LandingPage-heroImage img {
+        height: auto;
+        max-height: 290px
+    }
+
+    .prp-LandingPage-features {
+        padding: 32px 6%;
+        background: #132A5633
+    }
+
+    .prp-LandingPage-sectionHeading .prp-LandingPage-eyebrow {
+        margin-bottom: 15px;
+        font-size: 13px
+    }
+
+    .prp-LandingPage-sectionHeading h2 {
+        font-size: 18px
+    }
+
+    .prp-LandingPage-featureGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 24px
+    }
+
+    .prp-LandingPage-featureCard {
+        min-height: 190px;
+        padding: 16px 10px;
+        border-radius: 12px
+    }
+
+    .prp-LandingPage-featureIcon {
+        width: 54px;
+        height: 54px;
+        margin-bottom: 10px
+    }
+
+    .prp-LandingPage-featureCard h3 {
+        font-size: 13px
+    }
+
+    .prp-LandingPage-featureCard>p {
+        font-size: 12px
+    }
+
+    .prp-LandingPage-testimonials {
+        padding: 36px 6% 40px;
+        background: transparent
+    }
+
+    .prp-LandingPage-testimonialGrid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 24px
+    }
+
+    .prp-LandingPage-testimonialCard {
+        min-height: 180px;
+        padding: 22px;
+        border-radius: 22px
+    }
+
+    .prp-LandingPage-testimonialMessage {
+        margin-top: 16px;
+        font-size: 12px
+    }
+
+    .prp-LandingPage-companies {
+        padding: 32px 6%;
+        background: #132A5699
+    }
+
+    .prp-LandingPage-companies .prp-LandingPage-sectionHeading h2 {
+        font-size: 17px;
+        letter-spacing: 1px
+    }
+
+    .prp-LandingPage-companyGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px 12px;
+        margin-top: 24px
+    }
+
+    .prp-LandingPage-companyLogo img {
+        max-width: 100px;
+        max-height: 30px
+    }
+}
+
+@media(max-width:360px) {
+    .prp-LandingPage-featureGrid {
+        grid-template-columns: 1fr
+    }
+
+    .prp-LandingPage-featureCard {
+        min-height: 180px
+    }
+
+    .prp-LandingPage-companyGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+}

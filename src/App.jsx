@@ -1,6 +1,6 @@
-
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import MainSection from './Components-LandingPage/MainSection'
 import CommonLoginScreen from './Components-Login/CommonLoginScreen'
 import ForgotPassword from './Components-Login/ForgotPassword'
 import PlacementReset from './Components-Login/PlacementReset'
@@ -9,6 +9,10 @@ import SuccessfulPage from './Components-Login/SuccessfulPage'
 import WelcomeRegistrationScreen from './Components-Registration/WelcomeRegistrationScreen'
 
 const router = createBrowserRouter([
+    {
+        path: '/PRP_Portal',
+        element: <MainSection />
+    },
     {
         path: '/PRP_Portal/Login',
         element: <CommonLoginScreen />
