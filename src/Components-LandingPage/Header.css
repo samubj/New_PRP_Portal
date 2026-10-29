@@ -1,268 +1,198 @@
-.prp-LandingPage-header {
-    width: 100%;
-    height: 52px;
-    padding: 0 24px 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.prp-Header-container {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 24px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(270deg, #FFFFFF 39.9%, #566B94 93.27%);
+  border: 1px solid #176789;
+  position: relative;
+  z-index: 10;
+}
+.prp-Header-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  min-width: 235px;
+  text-decoration: none;
+}
+.prp-Header-brand > img {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: block;
+  object-fit: contain;
+  background: #132A56;
+  border-radius: 12px;
+}
+.prp-Header-brand > span {
+  color: #132A56;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.prp-Header-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(18px, 3.5vw, 45px);
+  flex: 1;
+  min-width: 0;
+}
+.prp-Header-navLink {
+  position: relative;
+  padding: 8px 0;
+  color: #132A56;
+  font-size: 11px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.prp-Header-navLink:hover {
+  color: #333334;
+}
+.prp-Header-navLink.active::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: #132A56;
+  content: "";
+}
+.prp-Header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.prp-Header-loginButton,
+.prp-Header-registerButton {
+  min-width: 70px;
+  height: 34px;
+  padding: 0 18px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 6px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.prp-Header-loginButton {
+  background: #132A56;
+}
+.prp-Header-registerButton {
+  background: #132A56;
+}
+.prp-Header-loginButton:hover,
+.prp-Header-registerButton:hover {
+  background: #333334;
+  color: #FFFFFF;
+}
+@media (max-width: 1100px) {
+  .prp-Header-container {
+    padding: 0 14px 0 8px;
+    gap: 12px;
+  }
+  .prp-Header-brand {
+    min-width: 190px;
+    gap: 8px;
+  }
+  .prp-Header-brand > img {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    padding: 9px;
+  }
+  .prp-Header-brand > span {
+    font-size: 12px;
+  }
+  .prp-Header-navigation {
+    gap: 18px;
+  }
+  .prp-Header-navLink {
+    font-size: 10px;
+  }
+  .prp-Header-actions {
+    gap: 7px;
+  }
+  .prp-Header-loginButton,
+  .prp-Header-registerButton {
+    min-width: 60px;
+    padding: 0 12px;
+  }
+}
+@media (max-width: 750px) {
+  .prp-Header-container {
+    min-height: 60px;
+    flex-wrap: wrap;
+    padding: 8px 12px;
+    gap: 10px;
+  }
+  .prp-Header-brand {
+    min-width: 0;
+    max-width: calc(100% - 140px);
+  }
+  .prp-Header-actions {
+    margin-left: auto;
+  }
+  .prp-Header-navigation {
+    order: 3;
+    flex-basis: 100%;
+    justify-content: flex-start;
+    gap: 24px;
+    overflow-x: auto;
+    padding: 5px 0;
+  }
+  .prp-Header-navLink {
+    font-size: 11px;
+  }
+  .prp-Header-loginButton,
+  .prp-Header-registerButton {
+    height: 32px;
+    min-width: 58px;
+    padding: 0 12px;
+  }
+}
+@media (max-width: 420px) {
+  .prp-Header-container {
+    padding: 8px;
+  }
+  .prp-Header-brand {
+    gap: 7px;
+    max-width: calc(100% - 120px);
+  }
+  .prp-Header-brand > img {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  .prp-Header-brand > span {
+    font-size: 10px;
+  }
+  .prp-Header-actions {
+    gap: 5px;
+  }
+  .prp-Header-loginButton,
+  .prp-Header-registerButton {
+    height: 30px;
+    min-width: 48px;
+    padding: 0 8px;
+    font-size: 10px;
+  }
+  .prp-Header-navigation {
     gap: 20px;
-    background: linear-gradient(270deg, #FFFFFF 39.9%, #566B94 93.27%);
-    border: 1px solid #176789;
-    position: relative;
-    z-index: 10;
-    box-sizing: border-box
-}
-
-.prp-LandingPage-brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    text-decoration: none;
-    min-width: 235px
-}
-
-.prp-LandingPage-brand>img {
-    width: 44px;
-    height: 44px;
-    min-width: 44px;
-    padding: 10px;
-    box-sizing: border-box;
-    display: block;
-    object-fit: contain;
-    background: #132A56;
-    border-radius: 12px
-}
-
-.prp-LandingPage-brand>span {
-    display: block;
-    margin: 0;
-    color: #132A56;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.3;
-    text-decoration: none;
-    white-space: normal
-}
-
-.prp-LandingPage-navigation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: clamp(18px, 3.5vw, 45px);
-    flex: 1;
-    min-width: 0
-}
-
-.prp-LandingPage-navLink {
-    position: relative;
-    padding: 8px 0;
-    color: #132A56;
-    font-size: 11px;
-    text-decoration: none;
-    white-space: nowrap
-}
-
-.prp-LandingPage-navLink:hover {
-    color: #132A56
-}
-
-.prp-LandingPage-navLink.active::after {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    background: #132A56;
-    content: ""
-}
-
-.prp-LandingPage-headerActions {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0
-}
-
-.prp-LandingPage-loginButton,
-.prp-LandingPage-registerButton {
-    min-width: 70px;
-    height: 34px;
-    padding: 0 18px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    border-radius: 6px;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 11px;
-    font-weight: 600;
-    white-space: nowrap;
-    cursor: pointer
-}
-
-.prp-LandingPage-loginButton {
-    background: #176F8A
-}
-
-.prp-LandingPage-registerButton {
-    background: #132A56
-}
-
-.prp-LandingPage-loginButton:hover,
-.prp-LandingPage-registerButton:hover {
-    background: #132A56;
-    color: #FFFFFF
-}
-
-@media(min-width:1400px) {
-    .prp-LandingPage-header {
-        height: 52px
-    }
-
-    .prp-LandingPage-brand {
-        min-width: 250px
-    }
-
-    .prp-LandingPage-brand>img {
-        width: 44px;
-        height: 44px;
-        min-width: 44px
-    }
-
-    .prp-LandingPage-brand>span {
-        font-size: 14px
-    }
-}
-
-@media(max-width:1100px) {
-    .prp-LandingPage-header {
-        padding: 0 14px 0 8px;
-        gap: 12px
-    }
-
-    .prp-LandingPage-brand {
-        min-width: 190px;
-        gap: 8px
-    }
-
-    .prp-LandingPage-brand>img {
-        width: 40px;
-        height: 40px;
-        min-width: 40px;
-        padding: 9px
-    }
-
-    .prp-LandingPage-brand>span {
-        font-size: 12px
-    }
-
-    .prp-LandingPage-navigation {
-        gap: 18px
-    }
-
-    .prp-LandingPage-navLink {
-        font-size: 10px
-    }
-
-    .prp-LandingPage-headerActions {
-        gap: 7px
-    }
-
-    .prp-LandingPage-loginButton,
-    .prp-LandingPage-registerButton {
-        min-width: 60px;
-        padding: 0 12px
-    }
-}
-
-@media(max-width:750px) {
-    .prp-LandingPage-header {
-        height: auto;
-        min-height: 60px;
-        flex-wrap: wrap;
-        padding: 8px 12px;
-        gap: 10px
-    }
-
-    .prp-LandingPage-brand {
-        min-width: 0;
-        max-width: calc(100% - 140px)
-    }
-
-    .prp-LandingPage-brand>img {
-        width: 40px;
-        height: 40px;
-        min-width: 40px;
-        padding: 9px
-    }
-
-    .prp-LandingPage-brand>span {
-        font-size: 12px
-    }
-
-    .prp-LandingPage-headerActions {
-        margin-left: auto
-    }
-
-    .prp-LandingPage-navigation {
-        order: 3;
-        flex-basis: 100%;
-        justify-content: flex-start;
-        gap: 24px;
-        overflow-x: auto;
-        padding: 5px 0
-    }
-
-    .prp-LandingPage-navLink {
-        font-size: 11px
-    }
-
-    .prp-LandingPage-loginButton,
-    .prp-LandingPage-registerButton {
-        height: 32px;
-        min-width: 58px;
-        padding: 0 12px
-    }
-}
-
-@media(max-width:420px) {
-    .prp-LandingPage-header {
-        padding: 8px
-    }
-
-    .prp-LandingPage-brand {
-        gap: 7px;
-        max-width: calc(100% - 120px)
-    }
-
-    .prp-LandingPage-brand>img {
-        width: 36px;
-        height: 36px;
-        min-width: 36px;
-        padding: 8px;
-        border-radius: 10px
-    }
-
-    .prp-LandingPage-brand>span {
-        font-size: 10px
-    }
-
-    .prp-LandingPage-headerActions {
-        gap: 5px
-    }
-
-    .prp-LandingPage-loginButton,
-    .prp-LandingPage-registerButton {
-        height: 30px;
-        min-width: 48px;
-        padding: 0 8px;
-        font-size: 10px
-    }
-
-    .prp-LandingPage-navigation {
-        gap: 20px
-    }
+  }
 }
