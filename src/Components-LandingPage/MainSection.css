@@ -1,10 +1,10 @@
-.prp-MainSection-main {
+.prp-LandingPage-mainPage {
   width: 100%;
   color: #132A56;
   overflow: hidden;
   background: linear-gradient(270deg, #FFFFFF 39.9%, #566B94 93.27%);
 }
-.prp-MainSection-hero {
+.prp-LandingPage-welcomePart {
   min-height: 368px;
   padding: 45px 8.3%;
   display: grid;
@@ -13,17 +13,17 @@
   gap: 35px;
   background: transparent;
 }
-.prp-MainSection-heroContent {
+.prp-LandingPage-welcomeWords {
   max-width: 510px;
 }
-.prp-MainSection-eyebrow {
+.prp-LandingPage-futureText {
   margin: 0 0 28px;
   color: #333334;
   font-size: 15px;
   font-weight: 600;
   line-height: 1.5;
 }
-.prp-MainSection-heroContent h1 {
+.prp-LandingPage-welcomeWords h1 {
   margin: 0 0 24px;
   color: #132A56;
   font-size: 34px;
@@ -31,7 +31,7 @@
   line-height: 1.45;
   letter-spacing: -.5px;
 }
-.prp-MainSection-heroDescription {
+.prp-LandingPage-careerDescription {
   max-width: 480px;
   margin: 0;
   color: #333334;
@@ -39,14 +39,14 @@
   font-weight: 400;
   line-height: 1.7;
 }
-.prp-MainSection-heroActions {
+.prp-LandingPage-startButtons {
   display: flex;
   align-items: center;
   gap: 20px;
   margin-top: 30px;
 }
-.prp-MainSection-primaryButton,
-.prp-MainSection-secondaryButton {
+.prp-LandingPage-getStartedButton,
+.prp-LandingPage-exploreJobsButton {
   min-height: 44px;
   padding: 0 22px;
   display: inline-flex;
@@ -59,64 +59,74 @@
   box-shadow: 0 4px 5px rgba(12, 32, 66, .18);
   transition: transform .2s, box-shadow .2s;
 }
-.prp-MainSection-primaryButton {
+.prp-LandingPage-getStartedButton {
   background: #132A56;
   color: #FFFFFF;
 }
-.prp-MainSection-secondaryButton {
+.prp-LandingPage-exploreJobsButton {
   background: #FFFFFF;
   color: #132A56;
 }
-.prp-MainSection-primaryButton:hover,
-.prp-MainSection-secondaryButton:hover {
+.prp-LandingPage-getStartedButton:hover,
+.prp-LandingPage-exploreJobsButton:hover {
   transform: translateY(-2px);
   box-shadow: 0 7px 14px rgba(12, 32, 66, .2);
 }
-.prp-MainSection-primaryButton:hover {
+.prp-LandingPage-getStartedButton:hover {
   color: #FFFFFF;
 }
-.prp-MainSection-secondaryButton:hover {
+.prp-LandingPage-exploreJobsButton:hover {
   color: #132A56;
 }
-.prp-MainSection-heroImage {
+.prp-LandingPage-welcomePictureArea {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.prp-MainSection-heroImage img {
+.prp-LandingPage-welcomePictureArea img {
   display: block;
   width: 100%;
   max-width: 480px;
   height: 300px;
   object-fit: contain;
 }
-.prp-MainSection-features {
+.prp-LandingPage-benefitsPart {
   padding: 30px 4.7% 25px;
   background: #132A5633;
 }
-.prp-MainSection-sectionHeading {
+.prp-LandingPage-benefitsHeadingArea,
+.prp-LandingPage-reviewsHeadingArea,
+.prp-LandingPage-companyTrustHeadingArea {
   text-align: center;
 }
-.prp-MainSection-sectionHeading .prp-MainSection-eyebrow {
+.prp-LandingPage-benefitsHeadingArea .prp-LandingPage-benefitsLabel {
   margin: 0 0 22px;
   font-size: 14px;
   color: #333334;
 }
-.prp-MainSection-sectionHeading h2 {
+.prp-LandingPage-benefitsHeadingArea .prp-LandingPage-benefitsHeading {
   margin: 0;
   color: #132A56;
   font-size: 21px;
   font-weight: 700;
   line-height: 1.5;
 }
-.prp-MainSection-featureGrid {
+.prp-LandingPage-reviewsHeadingArea .prp-LandingPage-reviewsHeading,
+.prp-LandingPage-companyTrustHeadingArea .prp-LandingPage-companyTrustHeading {
+  margin: 0;
+  color: #132A56;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.prp-LandingPage-benefitsList {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 30px;
   margin-top: 28px;
 }
-.prp-MainSection-featureCard {
+.prp-LandingPage-benefitCard {
   min-width: 0;
   min-height: 182px;
   padding: 15px 10px;
@@ -128,7 +138,7 @@
   border: 1px solid #8CAAC7;
   border-radius: 12px;
 }
-.prp-MainSection-featureIcon {
+.prp-LandingPage-benefitIconCircle {
   width: 54px;
   height: 54px;
   margin-bottom: 12px;
@@ -139,12 +149,12 @@
   border-radius: 50%;
   flex-shrink: 0;
 }
-.prp-MainSection-featureIcon img {
+.prp-LandingPage-benefitIconCircle img {
   width: 24px;
   height: 24px;
   object-fit: contain;
 }
-.prp-MainSection-featureCard h3 {
+.prp-LandingPage-benefitCard h3 {
   min-height: 30px;
   margin: 0 0 8px;
   display: flex;
@@ -155,27 +165,27 @@
   font-weight: 500;
   line-height: 1.4;
 }
-.prp-MainSection-featureCard > p {
+.prp-LandingPage-benefitCard > p {
   max-width: 180px;
   margin: 0;
   color: #333334;
   font-size: 12px;
   line-height: 1.5;
 }
-.prp-MainSection-testimonials {
+.prp-LandingPage-reviewsPart {
   padding: 48px 4.7% 50px;
   background: transparent;
 }
-.prp-MainSection-testimonials .prp-MainSection-sectionHeading .prp-MainSection-eyebrow {
+.prp-LandingPage-reviewsPart .prp-LandingPage-reviewsHeadingArea .prp-LandingPage-reviewsLabel {
   margin-bottom: 18px;
 }
-.prp-MainSection-testimonialGrid {
+.prp-LandingPage-reviewsList {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
   margin-top: 28px;
 }
-.prp-MainSection-testimonialCard {
+.prp-LandingPage-reviewCard {
   position: relative;
   min-width: 0;
   min-height: 177px;
@@ -185,14 +195,14 @@
   border-radius: 27px;
   overflow: hidden;
 }
-.prp-MainSection-testimonialHeader {
+.prp-LandingPage-reviewUserDetails {
   position: relative;
   z-index: 1;
   display: flex;
   align-items: center;
   gap: 14px;
 }
-.prp-MainSection-profileIcon {
+.prp-LandingPage-reviewProfilePicture {
   width: 50px;
   height: 50px;
   flex-shrink: 0;
@@ -202,38 +212,38 @@
   border: 2px solid #FFFFFF;
   border-radius: 17px;
 }
-.prp-MainSection-profileIcon img {
+.prp-LandingPage-reviewProfilePicture img {
   width: 35px;
   height: 35px;
   object-fit: contain;
 }
-.prp-MainSection-testimonialInfo {
+.prp-LandingPage-reviewUserInfo {
   min-width: 0;
 }
-.prp-MainSection-stars {
+.prp-LandingPage-reviewStars {
   display: flex;
   align-items: center;
   gap: 2px;
   margin-bottom: 3px;
 }
-.prp-MainSection-stars img {
+.prp-LandingPage-reviewStars img {
   width: 12px;
   height: 12px;
   object-fit: contain;
 }
-.prp-MainSection-testimonialInfo h3 {
+.prp-LandingPage-reviewUserInfo h3 {
   margin: 0;
   color: #FFFFFF;
   font-size: 12px;
   font-weight: 600;
 }
-.prp-MainSection-testimonialInfo > p {
+.prp-LandingPage-reviewUserInfo > p {
   margin: 3px 0 0;
   color: #4D5A81;
   font-size: 9px;
   line-height: 1.4;
 }
-.prp-MainSection-testimonialMessage {
+.prp-LandingPage-reviewMessage {
   position: relative;
   z-index: 1;
   margin: 17px 0 0;
@@ -242,7 +252,7 @@
   font-style: italic;
   line-height: 1.5;
 }
-.prp-MainSection-quoteIcon {
+.prp-LandingPage-reviewQuoteMark {
   position: absolute;
   top: 15px;
   right: 18px;
@@ -251,22 +261,22 @@
   object-fit: contain;
   opacity: .15;
 }
-.prp-MainSection-companies {
+.prp-LandingPage-companyTrustPart {
   padding: 30px 5% 32px;
   background: #132A5699;
   border-top: 2px solid #8796B2;
 }
-.prp-MainSection-companies .prp-MainSection-sectionHeading .prp-MainSection-eyebrow {
+.prp-LandingPage-companyTrustPart .prp-LandingPage-companyTrustHeadingArea .prp-LandingPage-companyTrustLabel {
   margin-bottom: 18px;
   letter-spacing: 2px;
   color: #333334;
 }
-.prp-MainSection-companies .prp-MainSection-sectionHeading h2 {
+.prp-LandingPage-companyTrustPart .prp-LandingPage-companyTrustHeadingArea .prp-LandingPage-companyTrustHeading {
   font-size: 21px;
   letter-spacing: 2px;
   color: #132A56;
 }
-.prp-MainSection-companyGrid {
+.prp-LandingPage-companyLogoList {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
   align-items: center;
@@ -274,14 +284,14 @@
   gap: 20px;
   margin-top: 28px;
 }
-.prp-MainSection-companyLogo {
+.prp-LandingPage-companyLogoItem {
   width: 120px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.prp-MainSection-companyLogo img {
+.prp-LandingPage-companyLogoItem img {
   display: block;
   max-width: 110px;
   width: 100%;
@@ -289,171 +299,171 @@
   object-fit: contain;
 }
 @media (min-width: 1500px) {
-  .prp-MainSection-hero {
+  .prp-LandingPage-welcomePart {
     padding-left: 8.3%;
     padding-right: 8.3%;
     min-height: 368px;
   }
-  .prp-MainSection-featureGrid {
+  .prp-LandingPage-benefitsList {
     gap: 30px;
   }
-  .prp-MainSection-featureCard {
+  .prp-LandingPage-benefitCard {
     min-height: 182px;
   }
 }
 @media (max-width: 1100px) {
-  .prp-MainSection-hero {
+  .prp-LandingPage-welcomePart {
     padding: 40px 5%;
     gap: 20px;
   }
-  .prp-MainSection-heroContent h1 {
+  .prp-LandingPage-welcomeWords h1 {
     font-size: 30px;
   }
-  .prp-MainSection-heroImage img {
+  .prp-LandingPage-welcomePictureArea img {
     height: 280px;
   }
-  .prp-MainSection-featureGrid {
+  .prp-LandingPage-benefitsList {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 22px;
   }
-  .prp-MainSection-featureCard {
+  .prp-LandingPage-benefitCard {
     min-height: 200px;
   }
-  .prp-MainSection-testimonialGrid {
+  .prp-LandingPage-reviewsList {
     gap: 16px;
   }
-  .prp-MainSection-testimonialCard {
+  .prp-LandingPage-reviewCard {
     padding: 22px 18px;
     border-radius: 23px;
   }
-  .prp-MainSection-profileIcon {
+  .prp-LandingPage-reviewProfilePicture {
     width: 46px;
     height: 46px;
     border-radius: 15px;
   }
-  .prp-MainSection-profileIcon img {
+  .prp-LandingPage-reviewProfilePicture img {
     width: 32px;
     height: 32px;
   }
-  .prp-MainSection-testimonialHeader {
+  .prp-LandingPage-reviewUserDetails {
     gap: 10px;
   }
-  .prp-MainSection-companyGrid {
+  .prp-LandingPage-companyLogoList {
     gap: 15px;
   }
 }
 @media (max-width: 650px) {
-  .prp-MainSection-hero {
+  .prp-LandingPage-welcomePart {
     min-height: auto;
     padding: 42px 7% 32px;
     grid-template-columns: 1fr;
     gap: 18px;
   }
-  .prp-MainSection-heroContent {
+  .prp-LandingPage-welcomeWords {
     max-width: none;
   }
-  .prp-MainSection-eyebrow {
+  .prp-LandingPage-futureText {
     margin-bottom: 18px;
     font-size: 13px;
   }
-  .prp-MainSection-heroContent h1 {
+  .prp-LandingPage-welcomeWords h1 {
     margin-bottom: 16px;
     font-size: 30px;
     line-height: 1.35;
   }
-  .prp-MainSection-heroDescription {
+  .prp-LandingPage-careerDescription {
     font-size: 14px;
   }
-  .prp-MainSection-heroActions {
+  .prp-LandingPage-startButtons {
     gap: 12px;
     margin-top: 23px;
   }
-  .prp-MainSection-primaryButton,
-  .prp-MainSection-secondaryButton {
+  .prp-LandingPage-getStartedButton,
+  .prp-LandingPage-exploreJobsButton {
     min-height: 44px;
     padding: 0 18px;
     font-size: 13px;
   }
-  .prp-MainSection-heroImage img {
+  .prp-LandingPage-welcomePictureArea img {
     height: auto;
     max-height: 290px;
   }
-  .prp-MainSection-features {
+  .prp-LandingPage-benefitsPart {
     padding: 32px 6%;
     background: #132A5633;
   }
-  .prp-MainSection-sectionHeading .prp-MainSection-eyebrow {
+  .prp-LandingPage-benefitsHeadingArea .prp-LandingPage-benefitsLabel {
     margin-bottom: 15px;
     font-size: 13px;
   }
-  .prp-MainSection-sectionHeading h2 {
+  .prp-LandingPage-benefitsHeadingArea .prp-LandingPage-benefitsHeading {
     font-size: 18px;
   }
-  .prp-MainSection-featureGrid {
+  .prp-LandingPage-benefitsList {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
     margin-top: 24px;
   }
-  .prp-MainSection-featureCard {
+  .prp-LandingPage-benefitCard {
     min-height: 190px;
     padding: 16px 10px;
     border-radius: 12px;
   }
-  .prp-MainSection-featureIcon {
+  .prp-LandingPage-benefitIconCircle {
     width: 54px;
     height: 54px;
     margin-bottom: 10px;
   }
-  .prp-MainSection-featureCard h3 {
+  .prp-LandingPage-benefitCard h3 {
     font-size: 13px;
   }
-  .prp-MainSection-featureCard > p {
+  .prp-LandingPage-benefitCard > p {
     font-size: 12px;
   }
-  .prp-MainSection-testimonials {
+  .prp-LandingPage-reviewsPart {
     padding: 36px 6% 40px;
     background: transparent;
   }
-  .prp-MainSection-testimonialGrid {
+  .prp-LandingPage-reviewsList {
     grid-template-columns: 1fr;
     gap: 16px;
     margin-top: 24px;
   }
-  .prp-MainSection-testimonialCard {
+  .prp-LandingPage-reviewCard {
     min-height: 180px;
     padding: 22px;
     border-radius: 22px;
   }
-  .prp-MainSection-testimonialMessage {
+  .prp-LandingPage-reviewMessage {
     margin-top: 16px;
     font-size: 12px;
   }
-  .prp-MainSection-companies {
+  .prp-LandingPage-companyTrustPart {
     padding: 32px 6%;
     background: #132A5699;
   }
-  .prp-MainSection-companies .prp-MainSection-sectionHeading h2 {
+  .prp-LandingPage-companyTrustPart .prp-LandingPage-companyTrustHeadingArea .prp-LandingPage-companyTrustHeading {
     font-size: 17px;
     letter-spacing: 1px;
   }
-  .prp-MainSection-companyGrid {
+  .prp-LandingPage-companyLogoList {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 18px 12px;
     margin-top: 24px;
   }
-  .prp-MainSection-companyLogo img {
+  .prp-LandingPage-companyLogoItem img {
     max-width: 100px;
     max-height: 30px;
   }
 }
 @media (max-width: 360px) {
-  .prp-MainSection-featureGrid {
+  .prp-LandingPage-benefitsList {
     grid-template-columns: 1fr;
   }
-  .prp-MainSection-featureCard {
+  .prp-LandingPage-benefitCard {
     min-height: 180px;
   }
-  .prp-MainSection-companyGrid {
+  .prp-LandingPage-companyLogoList {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

@@ -1,41 +1,41 @@
-.prp-Footer-container {
+.prp-LandingPage-bottomFooter {
   width: 100%;
   padding: 35px 6.2% 22px;
   box-sizing: border-box;
   background: #000C2DE5;
   color: #FFFFFF;
 }
-.prp-Footer-columns {
+.prp-LandingPage-footerColumns {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 45px;
   padding-bottom: 32px;
 }
-.prp-Footer-column {
+.prp-LandingPage-footerColumn {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
 }
-.prp-Footer-column h3 {
+.prp-LandingPage-footerColumnTitle {
   margin: 0 0 8px;
   color: #FFFFFF;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1.3px;
 }
-.prp-Footer-column a {
+.prp-LandingPage-footerLinkItem {
   color: #FFFFFF;
   font-size: 10px;
   line-height: 1.4;
   text-decoration: none;
   transition: opacity .2s;
 }
-.prp-Footer-column a:hover {
+.prp-LandingPage-footerLinkItem:hover {
   color: #FFFFFF;
   opacity: .8;
 }
-.prp-Footer-bottom {
+.prp-LandingPage-footerBottomLine {
   min-height: 46px;
   padding-top: 16px;
   display: flex;
@@ -44,50 +44,50 @@
   gap: 20px;
   border-top: 1px solid #FFFFFF;
 }
-.prp-Footer-bottom > p {
+.prp-LandingPage-copyrightText {
   margin: 0;
   color: #FFFFFF;
   font-size: 9px;
 }
-.prp-Footer-socialLinks {
+.prp-LandingPage-socialMediaList {
   display: flex;
   align-items: center;
   gap: 18px;
 }
-.prp-Footer-socialLinks a {
+.prp-LandingPage-socialMediaList a {
   width: 20px;
   height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.prp-Footer-socialLinks img {
+.prp-LandingPage-socialMediaList img {
   width: 17px;
   height: 17px;
   object-fit: contain;
 }
 @media (max-width: 650px) {
-  .prp-Footer-container {
+  .prp-LandingPage-bottomFooter {
     padding: 30px 6% 20px;
     background: #000C2DE5;
   }
-  .prp-Footer-columns {
+  .prp-LandingPage-footerColumns {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 28px 24px;
     padding-bottom: 26px;
   }
-  .prp-Footer-column h3 {
+  .prp-LandingPage-footerColumnTitle {
     font-size: 10px;
   }
-  .prp-Footer-column a {
+  .prp-LandingPage-footerLinkItem {
     font-size: 11px;
   }
-  .prp-Footer-bottom {
+  .prp-LandingPage-footerBottomLine {
     align-items: flex-start;
     flex-direction: column;
     gap: 15px;
   }
-  .prp-Footer-socialLinks {
+  .prp-LandingPage-socialMediaList {
     gap: 16px;
   }
 }

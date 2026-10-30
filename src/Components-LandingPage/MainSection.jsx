@@ -47,80 +47,80 @@ const MainSection = () => {
   return (
     <>
       <Header />
-      <main className="prp-MainSection-main">
-        <section className="prp-MainSection-hero" id="home">
-          <div className="prp-MainSection-heroContent">
-            <p className="prp-MainSection-eyebrow">BUILD YOUR FUTURE</p>
-            <h1>Connect. Learn.<br />Get Placed.</h1>
-            <p className="prp-MainSection-heroDescription">The all-in-one platform that bridges the gap between talented individuals, top employers and training institutions.</p>
-            <div className="prp-MainSection-heroActions">
-              <a href="/register" className="prp-MainSection-primaryButton">Get Started</a>
-              <a href="#features" className="prp-MainSection-secondaryButton">Explore Jobs</a>
+      <div className="prp-LandingPage-mainPage">
+        <div className="prp-LandingPage-welcomePart" id="home">
+          <div className="prp-LandingPage-welcomeWords">
+            <p className="prp-LandingPage-futureText">BUILD YOUR FUTURE</p>
+            <h1 className="prp-LandingPage-careerHeading">Connect. Learn.<br />Get Placed.</h1>
+            <p className="prp-LandingPage-careerDescription">The all-in-one platform that bridges the gap between talented individuals, top employers and training institutions.</p>
+            <div className="prp-LandingPage-startButtons">
+              <a href="/register" className="prp-LandingPage-getStartedButton">Get Started</a>
+              <a href="#features" className="prp-LandingPage-exploreJobsButton">Explore Jobs</a>
             </div>
           </div>
-          <div className="prp-MainSection-heroImage">
-            <img src={heroIllustration} alt="People collaborating on recruitment and career planning" />
+          <div className="prp-LandingPage-welcomePictureArea">
+            <img className="prp-LandingPage-welcomeIllustration" src={heroIllustration} alt="People collaborating on recruitment and career planning" />
           </div>
-        </section>
-        <section className="prp-MainSection-features" id="features">
-          <div className="prp-MainSection-sectionHeading">
-            <p className="prp-MainSection-eyebrow">WHY CHOOSE US</p>
-            <h2>Everything You Need for a Successful Career</h2>
+        </div>
+        <div className="prp-LandingPage-benefitsPart" id="features">
+          <div className="prp-LandingPage-benefitsHeadingArea">
+            <p className="prp-LandingPage-benefitsLabel prp-LandingPage-futureText">WHY CHOOSE US</p>
+            <h2 className="prp-LandingPage-benefitsHeading">Everything You Need for a Successful Career</h2>
           </div>
-          <div className="prp-MainSection-featureGrid">
+          <div className="prp-LandingPage-benefitsList">
             {features.map((feature) => (
-              <article className="prp-MainSection-featureCard" key={feature.title}>
-                <div className="prp-MainSection-featureIcon">
+              <article className="prp-LandingPage-benefitCard" key={feature.title}>
+                <div className="prp-LandingPage-benefitIconCircle">
                   <img src={feature.icon} alt={feature.title} />
                 </div>
-                <h3>{feature.title}</h3>
-                <p>{feature.description}</p>
+                <h3 className="prp-LandingPage-benefitTitle">{feature.title}</h3>
+                <p className="prp-LandingPage-benefitDescription">{feature.description}</p>
               </article>
             ))}
           </div>
-        </section>
-        <section className="prp-MainSection-testimonials" id="success-stories">
-          <div className="prp-MainSection-sectionHeading">
-            <p className="prp-MainSection-eyebrow">SUCCESS STORIES</p>
-            <h2>WHAT OUR USERS SAY</h2>
+        </div>
+        <div className="prp-LandingPage-reviewsPart" id="success-stories">
+          <div className="prp-LandingPage-reviewsHeadingArea">
+            <p className="prp-LandingPage-reviewsLabel prp-LandingPage-futureText">SUCCESS STORIES</p>
+            <h2 className="prp-LandingPage-reviewsHeading">WHAT OUR USERS SAY</h2>
           </div>
-          <div className="prp-MainSection-testimonialGrid">
+          <div className="prp-LandingPage-reviewsList">
             {testimonials.map((testimonial) => (
-              <article className="prp-MainSection-testimonialCard" key={testimonial.name}>
-                <img className="prp-MainSection-quoteIcon" src={QuoteIcon} alt="" />
-                <div className="prp-MainSection-testimonialHeader">
-                  <div className="prp-MainSection-profileIcon">
+              <div className="prp-LandingPage-reviewCard" key={testimonial.name}>
+                <img className="prp-LandingPage-reviewQuoteMark" src={QuoteIcon} alt="" />
+                <div className="prp-LandingPage-reviewUserDetails">
+                  <div className="prp-LandingPage-reviewProfilePicture">
                     <img src={ProfileIcon} alt="User profile" />
                   </div>
-                  <div className="prp-MainSection-testimonialInfo">
-                    <div className="prp-MainSection-stars" aria-label="5 out of 5 stars">
+                  <div className="prp-LandingPage-reviewUserInfo">
+                    <div className="prp-LandingPage-reviewStars" aria-label="5 out of 5 stars">
                       {[1, 2, 3, 4, 5].map((star) => (
                         <img src={StarIcon} alt="" key={star} />
                       ))}
                     </div>
-                    <h3>{testimonial.name}</h3>
-                    <p>{testimonial.role}</p>
+                    <h3 className="prp-LandingPage-reviewUserName">{testimonial.name}</h3>
+                    <p className="prp-LandingPage-reviewUserRole">{testimonial.role}</p>
                   </div>
                 </div>
-                <p className="prp-MainSection-testimonialMessage">{testimonial.message}</p>
-              </article>
+                <p className="prp-LandingPage-reviewMessage">{testimonial.message}</p>
+              </div>
             ))}
           </div>
-        </section>
-        <section className="prp-MainSection-companies" id="recruiters">
-          <div className="prp-MainSection-sectionHeading">
-            <p className="prp-MainSection-eyebrow">TRUSTED BY LEADING COMPANIES</p>
-            <h2>TOP COMPANIES HIRE HERE</h2>
+        </div>
+        <div className="prp-LandingPage-companyTrustPart" id="recruiters">
+          <div className="prp-LandingPage-companyTrustHeadingArea">
+            <p className="prp-LandingPage-companyTrustLabel prp-LandingPage-futureText">TRUSTED BY LEADING COMPANIES</p>
+            <h2 className="prp-LandingPage-companyTrustHeading">TOP COMPANIES HIRE HERE</h2>
           </div>
-          <div className="prp-MainSection-companyGrid">
+          <div className="prp-LandingPage-companyLogoList">
             {companies.map((company) => (
-              <div className="prp-MainSection-companyLogo" key={company.name}>
+              <div className="prp-LandingPage-companyLogoItem" key={company.name}>
                 <img src={company.logo} alt={company.name} />
               </div>
             ))}
           </div>
-        </section>
-      </main>
+        </div>
+      </div>
       <Footer />
     </>
   );

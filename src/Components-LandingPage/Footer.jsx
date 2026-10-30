@@ -13,26 +13,26 @@ const footerSections = [
 
 const Footer = () => {
   return (
-    <footer className="prp-Footer-container">
-      <div className="prp-Footer-columns">
+    <div className="prp-LandingPage-bottomFooter">
+      <div className="prp-LandingPage-footerColumns">
         {footerSections.map((section) => (
-          <div className="prp-Footer-column" key={section.title}>
-            <h3>{section.title}</h3>
+          <div className="prp-LandingPage-footerColumn" key={section.title}>
+            <h3 className="prp-LandingPage-footerColumnTitle">{section.title}</h3>
             {section.links.map((link) => (
-              <a href={link.href} key={link.label}>{link.label}</a>
+              <a className="prp-LandingPage-footerLinkItem" href={link.href} key={link.label}>{link.label}</a>
             ))}
           </div>
         ))}
       </div>
-      <div className="prp-Footer-bottom">
-        <p>© 2026 Placement and Recruitment Platform.</p>
-        <div className="prp-Footer-socialLinks">
-          <a href="https://www.facebook.com/" aria-label="Facebook"><img src={FacebookIcon} alt="Facebook" /></a>
-          <a href="https://x.com/" aria-label="X"><img src={XIcon} alt="X" /></a>
-          <a href="https://www.instagram.com/" aria-label="Instagram"><img src={InstagramIcon} alt="Instagram" /></a>
+      <div className="prp-LandingPage-footerBottomLine">
+        <p className="prp-LandingPage-copyrightText">© 2026 Placement and Recruitment Platform.</p>
+        <div className="prp-LandingPage-socialMediaList">
+          <a href="https://www.facebook.com/" aria-label="Facebook"><img className="prp-LandingPage-facebookIcon" src={FacebookIcon} alt="Facebook" /></a>
+          <a href="https://x.com/" aria-label="X"><img className="prp-LandingPage-xSocialIcon" src={XIcon} alt="X" /></a>
+          <a href="https://www.instagram.com/" aria-label="Instagram"><img className="prp-LandingPage-instagramIcon" src={InstagramIcon} alt="Instagram" /></a>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 
