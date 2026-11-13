@@ -7,11 +7,17 @@ import PlacementReset from './Components-Login/PlacementReset'
 import ResetPassword from './Components-Login/ResetPassword'
 import SuccessfulPage from './Components-Login/SuccessfulPage'
 import WelcomeRegistrationScreen from './Components-Registration/WelcomeRegistrationScreen'
+import ApplicationStatus from './Components-Dashboard/ApplicationStatus'
+import DashboardSidebar from './Components-Dashboard/DashboardSidebar'
 
 const router = createBrowserRouter([
     {
         path: '/PRP_Portal',
-        element: <MainSection />
+        element: <ApplicationStatus />
+    },
+    {
+        path: '/PRP_Portal/Test',
+        element: <DashboardSidebar />
     },
     {
         path: '/PRP_Portal/Login',

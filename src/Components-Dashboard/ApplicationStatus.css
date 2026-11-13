@@ -1,0 +1,142 @@
+.prp-dashboard-application-status-container {
+    width: 100%;
+    max-width: 600px;
+    min-height: 360px;
+    padding: 28px;
+    border: 1px solid #176789;
+    border-radius: 15px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.prp-dashboard-application-status-heading {
+    font-size: 22px;
+    font-weight: 400;
+    color: #132A56;
+    margin: 0;
+}
+
+.prp-dashboard-application-status-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 35px;
+    padding: 0 15px;
+}
+
+.prp-dashboard-application-status-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 180px;
+    flex-shrink: 0;
+}
+
+.prp-dashboard-application-status-item {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.prp-dashboard-status-item-0 {
+    background: #CEE0FD;
+    color: #2C62B8;
+}
+
+.prp-dashboard-status-item-1 {
+    background: #C3E6D5;
+    color: #0C7642;
+}
+
+.prp-dashboard-status-item-2 {
+    background: #FCE7C2;
+    color: #B87708;
+}
+
+.prp-dashboard-status-item-3 {
+    background: #FCD0CD;
+    color: #B73229;
+}
+
+.prp-dashboard-application-status-chart {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.prp-dashboard-application-status-chart-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #132A56;
+    width: 100%;
+    pointer-events: none;
+}
+
+.prp-dashboard-application-status-chart-text h3 {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0 0 15px;
+}
+
+.prp-dashboard-application-status-chart-text p {
+    font-size: 12px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+@media (max-width: 650px) {
+    .prp-dashboard-application-status-container {
+        max-width: 100%;
+        min-height: auto;
+        padding: 25px 18px;
+    }
+
+    .prp-dashboard-application-status-content {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 25px;
+        padding: 0;
+    }
+
+    .prp-dashboard-application-status-list {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .prp-dashboard-application-status-chart {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 400px) {
+    .prp-dashboard-application-status-container {
+        padding: 20px 14px;
+    }
+
+    .prp-dashboard-application-status-heading {
+        font-size: 19px;
+    }
+
+    .prp-dashboard-application-status-item {
+        height: 42px;
+        font-size: 13px;
+    }
+
+    .prp-dashboard-application-status-chart {
+        width: 165px;
+        height: 165px;
+    }
+}
